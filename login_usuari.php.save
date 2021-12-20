@@ -1,0 +1,15 @@
+<?php
+    
+     echo "<b>OBRINT EL FITXER EN MODE LECTURA I DESANT EL CONTINGUT DINS D'UN ARRAY DE STRINGS</b><br>";
+	 $filename="usuaris";
+	 $fitxer=fopen($filename,"r") or die ("No s'ha pogut obrir el fitxer");
+	 if ($fitxer) {
+	 $mida_fitxer=filesize($filename);	
+     $linia = explode(PHP_EOL, fread($fitxer,$mida_fitxer));
+     }	
+	 foreach ($linia as $cadena) {
+	 	
+echo "$cadena</br>";
+	 }
+	 fclose($fitxer);
+?>

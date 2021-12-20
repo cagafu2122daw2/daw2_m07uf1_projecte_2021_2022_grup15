@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	    <title>Formulari usuari login</title>	
+    </head>
+    <body>
+		<input type="button" value="Torna enrere" onClick="history.back();">
+        <h1>login usuari</h1>
+        <form action="login_usuari.php" method="POST">
+			Indica el tipus d'usuari:<br>
+			<input type="radio" name="tipus" value="usuari">Usuari<br>
+			<input type="radio" name="tipus" value="bibliotecari">Bibliotecari<br>
+			<input type="radio" name="tipus" value="cap">Bibliotecari en cap<br><br>
+            Indica el identificador personal: <input type="text" name="usuari"><br>
+            Indica la contrasenya: <input type="password" name="contrasenya"><br>
+            <input type="submit" value="Envia">
+        </form>
+    </body>
+</html>
